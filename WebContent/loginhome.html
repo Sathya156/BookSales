@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>
+Login Home
+</title>
+<style type="text/css">
+th,td,#t2
+{
+padding:0px;
+padding-left:2em;
+}
+table
+{
+border-collapse:separate;border-spacing:0px;
+border-collapse:collapse;border-spacing:0px;
+}
+a
+{
+color:Yellow;
+text-decoration:underline;
+}
+a:hover
+{
+color:black;
+text-shadow:0px 0px 0 #000;
+background-color:Yellow;
+}
+body
+{
+ color: black;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    }
+input#gobutton
+{
+padding:5px 25px; /*add some padding to the inside of the button*/ 
+background:yellow; /*the colour of the button*/ 
+border:1px solid #33842a; /*required or the default border for the browser will appear*/ 
+/*give the button curved corners, alter the size as required*/ 
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/ 
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/ 
+color:black;
+font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/ 
+input#gobutton:hover, input#gobutton:focus{
+background-color :black; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/ 
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75); 
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+color:yellow;
+}
+</style>
+</head>
+<body background="C:\Users\SATHYA PRAVEEN\Desktop\website\images\bg4.jpg">
+<table>
+<tr id=t1>
+<th>
+<a href="loginhome.html"><img src="C:\Users\SATHYA PRAVEEN\Desktop\website\images\bookworms.jpeg" width=85%></a>
+</th>
+</tr>
+<tr id=t2>
+<th><a href="welcome.html" target="bottom">Home</a></th>
+<th>
+<a href="loginaccount.html" target="bottom">Account</a></th>
+<th>
+<a href="order.html" target="bottom">Order</a></th>
+<th>
+<a href="resell.html" target="bottom">Resell</a></th>
+<th>
+<a href="aboutus.html" target="bottom">About Us</a></th>
+<th>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="main.html" target="_parent">
+<input id="gobutton" type="submit" value="Logout"/>
+</a>
+</th></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Stock</title>
+<style type="text/css">
+body
+{
+text-align:center;
+color:yellow;
+ text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+input#gobutton
+{
+padding:5px 25px; /*add some padding to the inside of the button*/ 
+background:yellow; /*the colour of the button*/ 
+border:1px solid #33842a; /*required or the default border for the browser will appear*/ 
+/*give the button curved corners, alter the size as required*/ 
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/ 
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/ 
+color:black;
+font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/ 
+input#gobutton:hover, input#gobutton:focus{
+background-color :black; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/ 
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75); 
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+color:yellow;
+}
+.ab1 {
+    background-color : yellow;
+    background-image: url(images/mb_btn2.jpg);
+    color: black;
+    border-style: none;
+}
+</style>
+</head>
+<body background="C:\Users\SATHYA PRAVEEN\Desktop\website\images\bg3.jpg">
+<form method="post" name="stock" action="addstock.jsp">
+Book Name:<select class=ab1 name="bookname">
+<option>A light in the attic</option>
+<option>Albert Einstein</option>
+<option>Captain America</option>
+<option>Charles Chaplin</option>
+<option>Cinderella</option>
+<option>Divergent</option>
+<option>Famous Five</option>
+<option>Harry Potter series</option>
+<option>Iron Man</option>
+<option>kevin pieterson</option>
+<option>Lyrical Ballads</option>
+<option>Marilyn Monroe</option>
+<option>Michael Jakson</option>
+<option>Michael Jordan</option>
+<option>mk gandhi</option>
+<option>Modern earth science</option>
+<option>nelson mandela</option>
+<option>Once upon a time</option>
+<option>ronaldo</option>
+<option>Scientific method of investigation</option>
+<option>Sindbad Adventure Series</option>
+<option>Sleeping Beauty</option>
+<option>Spider man</option>
+<option>steve jobs</option>
+<option>Stick poems</option>
+<option>The Adventure of Sherlock Holmes</option>
+<option>The Incredible Hulk</option>
+<option>Time Machine</option>
+<option>William Wordsworth</option>
+<option>World of Science</option>
+</select><br/><br/>
+<br/>
+<br/>
+No of Books:
+<input class=ab1 type="text" name="noofBooks">
+<br/>
+<br/>
+<input id="gobutton" type="submit" value="Add stock"/>
+<input id="gobutton" type="reset" value="Clear">
+</form>
+</body>
+</html>

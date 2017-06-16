@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Registration Form</title>
+<script type="text/javascript">
+function validate()
+{
+var fn= document.forms["reg"]["fname"].value;
+var un=reg.uname.value;
+var ln=reg.lname.value;
+var gen=reg.gender.value;
+var doab=reg.dob.value;
+var add=reg.address.value;
+var pin=reg.pincode.value;
+var mob=reg.mobno.value;
+var em=reg.email.value;
+var cty=reg.city.value;
+var ste=reg.state.value;
+if(fn.length==0||un.length==0||doab.length==0||add.length==0||pin.length==0||mob.length==0||em.length==0||cty.length==0||ste.length==0)
+{
+window.alert("Fill up the page properly");
+return false;
+}
+else
+return true;
+}
+</script>
+<style type="text/css">
+body
+{
+text-align:center;
+color:Yellow;
+text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+input#gobutton
+{
+padding:5px 25px; /*add some padding to the inside of the button*/ 
+background:yellow; /*the colour of the button*/ 
+border:1px solid #33842a; /*required or the default border for the browser will appear*/ 
+/*give the button curved corners, alter the size as required*/ 
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/ 
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/ 
+color:black;
+font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/ 
+input#gobutton:hover, input#gobutton:focus{
+background-color :110011; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/ 
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75); 
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+color:yellow;
+}
+.ab1 {
+    background-color : yellow;
+    background-image: url(images/mb_btn2.jpg);
+    color: black;
+    border-style: none;
+}
+</style>
+</head>
+<body background="C:\Users\SATHYA PRAVEEN\Desktop\website\images\bg3.jpg">
+<h1>We are Happy that you are joining our WebSite</h1>
+<form method="post" name="reg" onsubmit="return validate()" action="register.jsp">
+First Name:*
+<input class=ab1 type="text" name="fname"/><br/><br/>
+Last Name:
+<input class=ab1 type="text" name="lname"/><br/><br/>
+User Name:*
+<input class=ab1 type="text" name="uname"/><br/><br/>
+Gender:Male:<input class=ab1 type="radio" value="male" name="gender"/>
+Female:<input class=ab1 type="radio" value="female" name="gender"/><br/><br/>
+DOB:*(mm/dd/yyyy)
+<input class=ab1 type="date" name="dob"/><br/><br/>
+Address:*<input class=ab1 type="text" name="address"/><br/><br/>
+Pincode:*<input class=ab1 type="number" name="pincode"/><br/><br/>
+Mobile-No:*<input class=ab1 type="number" name="mobno"/><br/><br/>
+e-mail:*<input class=ab1 type="text" name="email"/><br/><br/>
+City*:<select class=ab1 name="city">
+<option>Chennai</option>
+<option>Trichy</option>
+<option>Kanyakumari</option>
+<option>Coimbatore</option>
+<option>Madurai</option>
+<option>Bangalore</option>
+<option>Tirupathi</option>
+<option>Mangalore</option>
+<option>Mysore</option>
+<option>Udupi</option>
+<option>Hyderabad</option>
+<option>Vishakapatnam</option>
+<option>Mumbai</option>
+<option>Pune</option>
+<option>Nasik</option>
+<option>Nagpur</option>
+<option>Bhopal</option>
+</select><br/><br/>
+State:*<select class=ab1 name="state">
+<option>Tamilnadu</option>
+<option>Karnataka</option>
+<option>Kerala</option>
+<option>Andra Pradesh</option>
+<option>Maharashtra</option>
+<option>Madhya Pradesh</option>
+<option>Uttar Pradesh</option>
+<option>Gujarat</option>
+<option>Delhi</option>
+<option>Jharkhand</option>
+<option>Assam</option>
+<option>Jammu and Kashmir</option>
+<option>Punjab</option>
+<option>Haryana</option>
+</select><br/><br/>
+<input id="gobutton" type="submit" value="Register"/>
+<input id="gobutton" type="reset" value="Clear">
+</form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>
+Fairy Tales</title>
+<style>
+body
+{
+text-align:center;
+color:yellow;
+ text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+input#gobutton
+{
+padding:5px 25px; /*add some padding to the inside of the button*/ 
+background:yellow; /*the colour of the button*/ 
+border:1px solid #33842a; /*required or the default border for the browser will appear*/ 
+/*give the button curved corners, alter the size as required*/ 
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/ 
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/ 
+color:black;
+font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/ 
+input#gobutton:hover, input#gobutton:focus{
+background-color :black; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/ 
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75); 
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+color:yellow;
+}
+.ab1 {
+    background-color : yellow;
+    background-image: url(images/mb_btn2.jpg);
+    color: black;
+    border-style: none;
+}
+img
+{
+opacity:0.5;
+}
+img:hover
+{
+opacity:1.0;
+}
+</style>
+</head>
+<body background="C:\Users\SATHYA PRAVEEN\Desktop\website\images\bg3.jpg">
+<form method="post" name="fairy" action="autobio.jsp">
+<h3>Cindrella</h3>
+<br/>
+<br/>
+<img src="C:\Users\SATHYA PRAVEEN\Desktop\website\images\fairy1.jpg">
+<br/>Click the radio button to select the book
+<br/>
+<input type="radio" value="Cinderella" name="autobio">
+<h3>Rs:120</h3>
+<br/>
+<h3>Sleeping Beauty</h3>
+<br/>
+<br/>
+<img src="C:\Users\SATHYA PRAVEEN\Desktop\website\images\fairy2.jpg">
+<br/>Click the radio button to select the book
+<br/>
+<input type="radio" value="Sleeping Beauty" name="autobio">
+<h3>Rs:200</h3>
+<br/>
+<h3>Once Upon a Time</h3>
+<br/>
+<br/>
+<img src="C:\Users\SATHYA PRAVEEN\Desktop\website\images\fairy3.jpg">
+<br/>Click the radio button to select the book
+<br/>
+<input type="radio" value="Once upon a time" name="autobio">
+<h3>Rs:215</h3>
+<br/>
+<h3>Sinbad Adventure</h3>
+<br/>
+<br/>
+<img src="C:\Users\SATHYA PRAVEEN\Desktop\website\images\fairy4.jpg">
+<br/>Click the radio button to select the book
+<br/>
+<input type="radio" value="Sindbad Adventure Series" name="autobio">
+<h3>Rs:115</h3>
+<br/>
+Phno:<input class=ab1 type="number" name="phno">
+<br/>
+<br/>
+<input id=gobutton type="submit" value="Buy">
+</form>
+</body>
+</html>
